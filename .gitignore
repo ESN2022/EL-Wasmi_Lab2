@@ -69,11 +69,14 @@
 **/db/*
 **/greybox_tmp/*
 **/output_files/*
+**/.metadata/*
+**/Lab2_sys/*
 **/obj/*
 **/stamp/*
 **/.qsys_edit
 *.sopcinfo
 *.qws
+*.tcl
 *.map
 **/bsp/*
 *.bak
