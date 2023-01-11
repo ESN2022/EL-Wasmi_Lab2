@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_Lab2' in SOPC Builder design 'Lab2_sys'
  * SOPC Builder design path: ../../Lab2_sys.sopcinfo
  *
- * Generated: Wed Jan 11 10:48:17 CET 2023
+ * Generated: Wed Jan 11 12:07:57 CET 2023
  */
 
 /*
@@ -149,7 +149,7 @@
 #define SEG_BIT_CLEARING_EDGE_REGISTER 0
 #define SEG_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define SEG_CAPTURE 0
-#define SEG_DATA_WIDTH 4
+#define SEG_DATA_WIDTH 12
 #define SEG_DO_TEST_BENCH_WIRING 0
 #define SEG_DRIVEN_SIM_VALUE 0
 #define SEG_EDGE_TYPE "NONE"
