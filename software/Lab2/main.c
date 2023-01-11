@@ -6,7 +6,11 @@ int main()
 { 
 	alt_putstr("main du compteur !\n");
 	/////on teste les differentes valeur pour etre sur que on afiche la meme valeur dans 7 segments
-	IOWR_ALTERA_AVALON_PIO_DATA(SEG_BASE, 7);
+	while(1){
+		for (int i = 0; i < 10; i++) {
+		        IOWR_ALTERA_AVALON_PIO_DATA(SEG_BASE, i);
+		        usleep(500000);
+	}}
 	return 0;
 }
 
