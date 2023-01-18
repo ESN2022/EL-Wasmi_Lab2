@@ -46,3 +46,19 @@ Passage à l'implémentation d'un compteur à 3 chiffres.
 - Mise en place d'un nouveau code prenant en compte l'interruption pour contrôler la poursuite du compteur, en utilisant les registres appropriés pour configurer le timer Nios II.
 - Tests pour s'assurer que le système fonctionne correctement avec l'interruption timer.
 - Finalisation de toutes les tâches liées à Lab2 et validation du projet en comparant les résultats avec la méthode de polling et l'interruption.
+
+Justification de l'utilisation de la valeur 0x07 pour le registre de contrôle :
+- IOWR_ALTERA_AVALON_TIMER_CONTROL(TIMER_0_BASE, 0x07) 
+
+La valeur 0x07 utilisée pour configurer le registre de contrôle du timer est justifiée par les différents bits qu'elle active. En utilisant cette valeur, nous activons les bits d'interruption, de mode continu et de démarrage. Cela permet au timer de fonctionner en continu, de déclencher une interruption à chaque expiration de la période de temporisation et de démarrer immédiatement après la configuration. Cela est pratique pour notre besoin de compteur avec interruption. En lisant la documentation du timer Nios II, nous avons pu identifier les différents bits à configurer pour obtenir le fonctionnement souhaité, et nous avons utilisé la valeur 0x07 pour activer ces bits spécifiques.
+
+![image](https://user-images.githubusercontent.com/75042681/213039419-478f4215-22df-4ea9-acbf-c71d5fc3bde5.png)
+
+
+En outre, pour montrer le fonctionnement final du compteur avec interruption timer, une vidéo a été créée pour montrer comment le compteur fonctionne en utilisant l'interruption :
+
+https://user-images.githubusercontent.com/75042681/213044303-a082bd47-0cd6-4c22-acaf-7665f5f5715f.mp4
+
+# Conclusion :
+
+En conclusion, ce lab 2 m'a permis de découper et de structurer un projet complexe en étapes simples pour arriver à la fin. J'ai appris à lire et comprendre les datasheets des périphériques pour les utiliser efficacement dans mes projets.
